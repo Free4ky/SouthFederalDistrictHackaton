@@ -13,9 +13,8 @@
 
 
 # Участники команды
-
-1. Карпова Анна
-2. Хан Анастасия
-3. Коротков Илья
-4. Кузнецов Денис
-5. Карпов Даниил
+<h3><img align="center" height="30" src="https://user-images.githubusercontent.com/51875349/198863127-837491f2-b57f-4c75-9840-6a4b01236c7a.png">: @uihlk, Карпова Анна</h3>
+<h3><img align="center" height="30" src="https://user-images.githubusercontent.com/51875349/198863127-837491f2-b57f-4c75-9840-6a4b01236c7a.png">: @nati2326, Хан Анастасия</h3>
+<h3><img align="center" height="30" src="https://user-images.githubusercontent.com/51875349/198863127-837491f2-b57f-4c75-9840-6a4b01236c7a.png">: @ilkorotkov, Коротков Илья</h3>
+<h3><img align="center" height="30" src="https://user-images.githubusercontent.com/51875349/198863127-837491f2-b57f-4c75-9840-6a4b01236c7a.png">: @Skadar7, Кузнецов Денис</h3>
+<h3><img align="center" height="30" src="https://user-images.githubusercontent.com/51875349/198863127-837491f2-b57f-4c75-9840-6a4b01236c7a.png">: @Free4ky, Карпов Даниил</h3>
