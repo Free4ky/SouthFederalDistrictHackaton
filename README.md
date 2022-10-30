@@ -10,7 +10,12 @@
 
 ---
 
+# Инструкция для запуска
 
+1. Установите зависимости проекта: pip install -r requirements.txt
+2. Запустите main.py 
+
+---
 
 # Участники команды
 <h3><img align="center" height="30" src="https://user-images.githubusercontent.com/51875349/198863127-837491f2-b57f-4c75-9840-6a4b01236c7a.png">: @uihlk, Карпова Анна</h3>
