@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Проанализировать сайт{% endblock %}
+
+{% block content %}
+<br/>
+<form method="POST" autocomplete="off">
+    <h3 align="center">Анализ сайт компании</h3>
+    <div class="form-group">
+        <label for="url">Ссылка на сайт компании</label>
+        <input type="text" class="form-control" id="url" name="url" placeholder="Введите ссылку на сайт компании"/>
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Проанализировать</button>
+</form>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Результаты анализа{% endblock %}
+
+{% block content %}
+<br/>
+<h3 align="center">Результаты анализа сайта компании</h3>
+<br/>
+
+<h4>Ссылка на сайт</h4>
+<a href="{{ website_url }}" target="_blank">{{ website_url }}</a>
+<br/>
+<br/>
+
+<h4>Таблица характеристик компании</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Характеристика</th>
+            <th scope="col">Предполагаемое значение</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Отрасль</th>
+            <td>{{ industry }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Подтрасль</th>
+            <td>{{ subindustry }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Технология (1 уровень)</th>
+            <td>{{ tech1 }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Технология (2 уровень)</th>
+            <td>{{ tech2 }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Технология (3 уровень)</th>
+            <td>{{ tech3 }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

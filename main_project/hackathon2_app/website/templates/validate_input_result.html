@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Результаты проверки{% endblock %}
+
+{% block content %}
+<br/>
+<h3 align="center">Результаты проверки</h3>
+<br/>
+
+<h4>Описание компании/продукта</h4>
+<p>{{ description }}</p>
+<br>
+
+<h4>Таблица характеристик</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Характеристика</th>
+            <th scope="col">Указанное значение</th>
+            <th scope="col">Оценка</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Отрасль</th>
+            <td>{{ industry }}</td>
+            <td>
+                {% if pred_industries|length == 0 %}
+                Значение корректно
+                {% else %}
+                Значение может быть некорректным. Возможные исправления:
+                <ul class="list-group">
+                    {% for pred_industry in pred_industries %}
+                    <li class="list-group-item">
+                        {{ pred_industry }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Подтрасль</th>
+            <td>{{ subindustry }}</td>
+            <td>
+                {% if pred_subindustries|length == 0 %}
+                Значение корректно
+                {% else %}
+                Значение может быть некорректным. Возможные исправления:
+                <ul class="list-group">
+                    {% for pred_subindustry in pred_subindustries %}
+                    <li class="list-group-item">
+                        {{ pred_subindustry }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Технология (1 уровень)</th>
+            <td>{{ tech1 }}</td>
+            <td>
+                {% if pred_techs1|length == 0 %}
+                Значение корректно
+                {% else %}
+                Значение может быть некорректным. Возможные исправления:
+                <ul class="list-group">
+                    {% for pred_tech1 in pred_techs1 %}
+                    <li class="list-group-item">
+                        {{ pred_tech1 }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Технология (2 уровень)</th>
+            <td>{{ tech2 }}</td>
+            <td>
+                {% if pred_techs2|length == 0 %}
+                Значение корректно
+                {% else %}
+                Значение может быть некорректным. Возможные исправления:
+                <ul class="list-group">
+                    {% for pred_tech2 in pred_techs2 %}
+                    <li class="list-group-item">
+                        {{ pred_tech2 }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">Технология (3 уровень)</th>
+            <td>{{ tech3 }}</td>
+            <td>
+                {% if pred_techs3|length == 0 %}
+                Значение корректно
+                {% else %}
+                Значение может быть некорректным. Возможные исправления:
+                <ul class="list-group">
+                    {% for pred_tech3 in pred_techs3 %}
+                    <li class="list-group-item">
+                        {{ pred_tech3 }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

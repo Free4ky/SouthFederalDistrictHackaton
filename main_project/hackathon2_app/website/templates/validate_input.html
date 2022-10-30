@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Ручная проверка{% endblock %}
+
+{% block content %}
+<br/>
+<form method="POST" autocomplete="off">
+    <h3 align="center">Заполните информацию о компании/продукте</h3>
+    <div class="form-group">
+        <label for="description">Описание</label>
+        <input type="text" class="form-control" id="description" name="description" placeholder="Введите описание"/>
+    </div>
+    <div class="form-group">
+        <label for="industry">Отрасль</label>
+        <input type="text" class="form-control" id="industry" name="industry" placeholder="Введите отрасль"/>
+    </div>
+    <div class="form-group">
+        <label for="subindustry">Подотрасль</label>
+        <input type="text" class="form-control" id="subindustry" name="subindustry" placeholder="Введите подотрасль"/>
+    </div>
+    <div class="form-group">
+        <label for="tech1">Технология (1 уровень)</label>
+        <input type="text" class="form-control" id="tech1" name="tech1" placeholder="Введите технологию (1 уровень)"/>
+    </div>
+    <div class="form-group">
+        <label for="tech2">Технология (2 уровень)</label>
+        <input type="text" class="form-control" id="tech2" name="tech2" placeholder="Введите технологию (2 уровень)"/>
+    </div>
+    <div class="form-group">
+        <label for="tech3">Технология (3 уровень)</label>
+        <input type="text" class="form-control" id="tech3" name="tech3" placeholder="Введите технологию (3 уровень)"/>
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Проверить</button>
+</form>
+{% endblock %}
